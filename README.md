@@ -6,7 +6,7 @@ BiblioUni es un proyecto académico desarrollado para aplicar estrategias, técn
 
 **Advertencia académica:** este proyecto corresponde a una implementación de referencia, debido a que no se contó con el código original del Módulo 2. No debe considerarse la implementación original del sistema BiblioUni.
 
-La aplicación utiliza Java 21 y Spring Boot, e incluye un catálogo de materiales en memoria, un servicio de consulta y un controlador REST. Las funcionalidades de préstamos, devoluciones, multas, persistencia y recomendaciones permanecen pendientes de implementación.
+La aplicación utiliza Java 21 y Spring Boot, e incluye un catálogo de materiales en memoria, un servicio de consulta, un controlador REST y una implementación básica del servicio de préstamos. Este último permite validar la disponibilidad de un material antes de autorizar su préstamo, así como controlar identificadores nulos. Las funcionalidades de devoluciones, multas, persistencia y recomendaciones permanecen pendientes de implementación.
 
 ## Objetivos
 
@@ -35,6 +35,7 @@ Los archivos se encuentran en `docs/pruebas/`:
 
 - `src/main/java/com/bibliouni/`: aplicación Spring Boot, modelo, servicio y controlador.
 - `src/test/java/com/bibliouni/`: pruebas automatizadas de servicio y controlador.
+- `PrestamoService.java` y `PrestamoServiceTest.java`: implementación básica del servicio de préstamos y sus pruebas automatizadas con JUnit 5 y Mockito.
 - `pom.xml`: configuración de Maven y dependencias.
 
 ## Herramientas utilizadas
@@ -63,7 +64,7 @@ La ejecución final de la suite automatizada registró:
 
 | Indicador | Resultado |
 |---|---|
-| Pruebas automatizadas ejecutadas | 10 |
+| Pruebas automatizadas ejecutadas | 13 |
 | Pruebas fallidas | 0 |
 | Errores | 0 |
 | Pruebas omitidas | 0 |
@@ -71,7 +72,7 @@ La ejecución final de la suite automatizada registró:
 | Casos de prueba diseñados | 15 |
 | Ciclos TDD documentados | 2 |
 
-**Aclaración:** las 10 pruebas automatizadas no equivalen a la ejecución de los 15 casos de prueba documentados. Los casos correspondientes a funcionalidades no implementadas permanecen pendientes.
+**Aclaración:** las 13 pruebas automatizadas no equivalen a la ejecución de los 15 casos de prueba documentados. Los casos correspondientes a funcionalidades no implementadas permanecen pendientes.
 
 ## Evidencias
 
@@ -84,7 +85,7 @@ La documentación detallada se encuentra en:
 
 ## Estado del proyecto
 
-Se completó la documentación de los 15 casos de prueba y la ejecución de 10 pruebas automatizadas sobre las funcionalidades disponibles en esta implementación de referencia.
+Se completó la documentación de los 15 casos de prueba y la ejecución de 13 pruebas automatizadas, con 0 fallos, 0 errores y resultado BUILD SUCCESS, sobre las funcionalidades disponibles en esta implementación de referencia.
 
 Se documentaron dos ciclos TDD con sus respectivas evidencias. Las funcionalidades futuras requieren desarrollo y validación antes de ejecutar sus casos de prueba.
 
