@@ -18,7 +18,7 @@ El presente plan establece la estrategia de verificación del sistema BiblioUni,
 
 Se adopta el estándar IEEE 829 para organizar el alcance, los recursos, los criterios de entrada y salida, las responsabilidades, los riesgos y las evidencias del proceso de pruebas.
 
-El proyecto corresponde a una implementación académica de referencia. Actualmente dispone de funcionalidades relacionadas con materiales bibliográficos, mientras que la gestión de préstamos, usuarios y persistencia requiere desarrollo adicional.
+El proyecto corresponde a una implementación académica de referencia. Actualmente dispone de funcionalidades de consulta y validación de materiales bibliográficos, así como de una implementación básica del servicio de préstamos que permite verificar la disponibilidad de un material antes de autorizarlo. La gestión completa de préstamos, devoluciones, multas, usuarios y persistencia requiere desarrollo adicional.
 
 ## 3. Objetivos
 

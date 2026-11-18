@@ -25,4 +25,15 @@ public class PrestamoService {
             .map(Material::disponible)
             .orElse(false);
 }
+
+public long calcularMulta(int diasRetraso) {
+    final long TARIFA_DIARIA = 1000L;
+
+    if (diasRetraso <= 0) {
+        return 0L;
+    }
+
+    return diasRetraso * TARIFA_DIARIA;
+}
+
 }
