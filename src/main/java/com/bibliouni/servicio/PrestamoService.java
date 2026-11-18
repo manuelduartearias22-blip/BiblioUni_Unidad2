@@ -14,8 +14,8 @@ public class PrestamoService {
     }
 
     public boolean prestar(Long materialId) {
-        Optional<Material> material = materialService.buscarPorId(materialId);
-
-        return material.isPresent() && material.get().disponible();
-    }
+    return materialService.buscarPorId(materialId)
+            .map(Material::disponible)
+            .orElse(false);
+}
 }
