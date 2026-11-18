@@ -14,6 +14,10 @@ public class PrestamoService {
     }
 
     public boolean prestar(Long materialId) {
+    if (materialId == null) {
+        return false;
+    }
+
     return materialService.buscarPorId(materialId)
             .map(Material::disponible)
             .orElse(false);
