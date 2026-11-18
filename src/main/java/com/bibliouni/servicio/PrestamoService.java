@@ -18,7 +18,10 @@ public class PrestamoService {
         return false;
     }
 
-    return materialService.buscarPorId(materialId)
+    Optional<Material> materialEncontrado =
+            materialService.buscarPorId(materialId);
+
+    return materialEncontrado
             .map(Material::disponible)
             .orElse(false);
 }
