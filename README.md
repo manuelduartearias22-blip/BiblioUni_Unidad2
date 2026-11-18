@@ -64,7 +64,7 @@ La ejecución final de la suite automatizada registró:
 
 | Indicador | Resultado |
 |---|---|
-| Pruebas automatizadas ejecutadas | 13 |
+| Pruebas automatizadas ejecutadas | 15 |
 | Pruebas fallidas | 0 |
 | Errores | 0 |
 | Pruebas omitidas | 0 |
@@ -72,7 +72,7 @@ La ejecución final de la suite automatizada registró:
 | Casos de prueba diseñados | 15 |
 | Ciclos TDD documentados | 2 |
 
-**Aclaración:** las 13 pruebas automatizadas no equivalen a la ejecución de los 15 casos de prueba documentados. Los casos correspondientes a funcionalidades no implementadas permanecen pendientes.
+**Aclaración:** las 15 pruebas automatizadas no equivalen a la ejecución de los 15 casos de prueba documentados. Los casos correspondientes a funcionalidades no implementadas permanecen pendientes.
 
 ## Evidencias
 
@@ -85,7 +85,7 @@ La documentación detallada se encuentra en:
 
 ## Estado del proyecto
 
-Se completó la documentación de los 15 casos de prueba y la ejecución de 13 pruebas automatizadas, con 0 fallos, 0 errores y resultado BUILD SUCCESS, sobre las funcionalidades disponibles en esta implementación de referencia.
+Se completó la documentación de los 15 casos de prueba y la ejecución de 15 pruebas automatizadas, con 0 fallos, 0 errores y resultado BUILD SUCCESS, sobre las funcionalidades disponibles en esta implementación de referencia.
 
 Se documentaron dos ciclos TDD con sus respectivas evidencias. Las funcionalidades futuras requieren desarrollo y validación antes de ejecutar sus casos de prueba.
 

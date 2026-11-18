@@ -4,6 +4,7 @@ import com.bibliouni.BiblioUniApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import com.bibliouni.modelo.Material;
 @SpringBootTest(classes = BiblioUniApplication.class)
 class MaterialServiceTest {
  @Autowired MaterialService servicio;
@@ -28,4 +29,26 @@ void buscarMaterialDisponible() {
     assertTrue(servicio.buscarDisponiblePorId(1L).isPresent());
     assertTrue(servicio.buscarDisponiblePorId(2L).isEmpty());
 }
+
+@Test
+void debeCrearMaterialExitosamente() {
+    // Arrange: preparar los datos de prueba
+    MaterialService servicioPrueba = new MaterialService();
+    Material nuevoMaterial = new Material(
+        3L,
+        "Pruebas de Software",
+        true
+    );
+
+    // Act: ejecutar la funcionalidad
+    Material resultado = servicioPrueba.crearMaterial(nuevoMaterial);
+
+    // Assert: verificar los resultados
+    assertNotNull(resultado);
+    assertEquals(3L, resultado.id());
+    assertEquals("Pruebas de Software", resultado.titulo());
+    assertTrue(servicioPrueba.buscarPorId(3L).isPresent());
+    assertEquals(3, servicioPrueba.listar().size());
+}
+
 }
